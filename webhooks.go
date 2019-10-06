@@ -170,8 +170,9 @@ type ProxyOutOfSessionCallbackWebhook struct {
 // This means it is possible to send an automated text
 // message response back.
 type SMSWebhook struct {
-	AccountSid string `json:"AccountSid"`
-	APIVersion string `json:"ApiVersion"`
+	AccountSid          string `json:"AccountSid"`
+	APIVersion          string `json:"ApiVersion"`
+	MessagingServiceSid string `json:"MessagingServiceSid"`
 
 	// SMS Specific
 	Body          string `json:"Body"`
